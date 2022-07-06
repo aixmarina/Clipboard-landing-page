@@ -2,26 +2,30 @@
 @mixin btn-base {
     color: white;
     border-radius: 30px;
-    font-size: larger;
+    font-size: large;
     font-weight: 400;
+    letter-spacing: 1px;
     font-family: 'Bai Jamjuree', sans-serif;
     border: none;
-    padding: 0.8rem 4.5rem;
+    padding: 1rem 4.5rem;
     width: 100%;
+    margin-bottom: 1.5rem;
 }
 
 //colors
 $strong-cyan: hsl(171, 66%, 44%);
 $strong-cyan2: hsl(171, 61%, 38%);
 $light-blue: hsl(233, 100%, 69%);
-$light-blue2: rgb(67, 87, 235);
+$light-blue2: rgb(81, 98, 230);
 $dark-grayish-blue: hsl(210, 10%, 33%);
 $grayish-blue: hsl(201, 11%, 66%);
+$grayish-blue2: rgba(245, 246, 248, 255);
 
 .btn-main-iOS {
     @include btn-base();
     background-color: $strong-cyan;
     border-bottom: solid 0.25rem $strong-cyan2;
+    box-shadow: 0 15px 25px -15px hsl(171deg 66% 44%)
 }
 
 .btn-main-Mac {
@@ -38,8 +42,8 @@ $grayish-blue: hsl(201, 11%, 66%);
     text-align: center;
 
     img {
-        width: 50px;
-        margin: 2rem;
+        width: 45px;
+        margin: 1.8rem;
     }
 
     h3 {
