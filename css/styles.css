@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Red+Hat+Display:wght@500;700;900&display=swap");
+.btn-main-iOS {
+  color: white;
+  border-radius: 30px;
+  font-size: larger;
+  font-weight: 400;
+  font-family: "Bai Jamjuree", sans-serif;
+  border: none;
+  padding: 0.8rem 4.5rem;
+  width: 100%;
+  background-color: hsl(171deg, 66%, 44%);
+  border-bottom: solid 0.25rem hsl(171deg, 61%, 38%);
+}
+
+.btn-main-Mac {
+  color: white;
+  border-radius: 30px;
+  font-size: larger;
+  font-weight: 400;
+  font-family: "Bai Jamjuree", sans-serif;
+  border: none;
+  padding: 0.8rem 4.5rem;
+  width: 100%;
+  background-color: hsl(233deg, 100%, 69%);
+  border-bottom: solid 0.25rem rgb(67, 87, 235);
+}
+
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.benefit-card img {
+  width: 50px;
+  margin: 2rem;
+}
+.benefit-card h3 {
+  font-size: x-large;
+  margin-bottom: 0;
+}
+.benefit-card p {
+  font-size: large;
+  margin-bottom: 2rem;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+body p {
+  color: hsl(201deg, 11%, 66%);
+  line-height: 30px;
+}
+body h1,
+body h2,
+body h3 {
+  color: hsl(210deg, 10%, 33%);
+}
+
+/*# sourceMappingURL=styles.css.map */

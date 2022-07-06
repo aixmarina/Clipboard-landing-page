@@ -1,0 +1,17 @@
+@use "components";
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+
+    p {
+        color: components.$grayish-blue;
+        line-height: 30px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: components.$dark-grayish-blue;
+    }
+}

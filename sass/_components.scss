@@ -1,0 +1,54 @@
+//mixins
+@mixin btn-base {
+    color: white;
+    border-radius: 30px;
+    font-size: larger;
+    font-weight: 400;
+    font-family: 'Bai Jamjuree', sans-serif;
+    border: none;
+    padding: 0.8rem 4.5rem;
+    width: 100%;
+}
+
+//colors
+$strong-cyan: hsl(171, 66%, 44%);
+$strong-cyan2: hsl(171, 61%, 38%);
+$light-blue: hsl(233, 100%, 69%);
+$light-blue2: rgb(67, 87, 235);
+$dark-grayish-blue: hsl(210, 10%, 33%);
+$grayish-blue: hsl(201, 11%, 66%);
+
+.btn-main-iOS {
+    @include btn-base();
+    background-color: $strong-cyan;
+    border-bottom: solid 0.25rem $strong-cyan2;
+}
+
+.btn-main-Mac {
+    @include btn-base();
+    background-color: $light-blue;
+    border-bottom: solid 0.25rem $light-blue2;
+
+}
+
+.benefit-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img {
+        width: 50px;
+        margin: 2rem;
+    }
+
+    h3 {
+        font-size: x-large;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: large;
+        margin-bottom: 2rem;
+    }
+}
