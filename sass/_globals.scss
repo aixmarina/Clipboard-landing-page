@@ -33,6 +33,8 @@ body {
 
 header {
     margin: 1rem;
+    text-align: center;
+
 
     img {
         width: 130px;
@@ -49,6 +51,11 @@ header {
             margin: 2rem 0;
             font-size: 17px;
         }
+    }
+
+    .btn-main {
+        width: 100%;
+
     }
 }
 
@@ -172,4 +179,23 @@ footer {
         gap: 2.5rem;
         margin-bottom: 1.5rem;
     }
+}
+
+@media (max-width: 1440px) and (min-width: 600px) {
+
+    body {
+        background-image: url('../assets/img/bg-header-desktop.png');
+    }
+
+    .btn-main {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        button {
+            padding: 0.9rem 0;
+            width: 32%;
+        }
+    }
+
 }
