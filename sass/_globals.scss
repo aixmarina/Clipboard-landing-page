@@ -188,7 +188,6 @@ footer {
     body {
         background-image: url(/assets/img/bg-header-desktop.png);
         background-repeat: no-repeat;
-
     }
 
     header {
@@ -233,5 +232,59 @@ footer {
 
     .desc-img-1 {
         flex-direction: row;
+        gap: 3rem;
+
+        .desc-text {
+            text-align: left;
+        }
+    }
+
+    .desc-img-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            max-width: 730px;
+
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+
+        .features-benefits {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            margin: 0 10%;
+
+            .benefit-card {
+                flex: 1;
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) and (min-width: 1000px) {
+
+    .desc-img-1 {
+        img {
+            max-width: 53%;
+            transform: translateX(-7%);
+        }
+    }
+}
+
+@media (max-width: 1440px) and (min-width: 1250px) {
+
+    .desc-img-1 .desc-text {
+        text-align: left;
+        margin-right: 14.5rem;
     }
 }
