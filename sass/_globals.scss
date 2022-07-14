@@ -129,14 +129,11 @@ section {
 }
 
 .companies {
-    margin: 6rem 0;
     display: flex;
-    flex-direction: column;
-    gap: 4.5rem;
-
-    img {
-        max-width: 120px;
-    }
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5.2rem;
 }
 
 .download {
@@ -244,9 +241,14 @@ footer {
         flex-direction: column;
         align-items: center;
 
+        h3 {
+            margin-top: 6rem;
+        }
+
         p {
             max-width: 730px;
-
+            margin-bottom: 5.5rem;
+            margin-top: 1rem;
         }
 
         img {
@@ -258,14 +260,29 @@ footer {
         display: flex;
         flex-direction: column;
 
+        .features-main {
+            h3 {
+                margin-top: 5.5rem;
+            }
+
+            p {
+                margin-top: 1.5rem;
+            }
+        }
+
         .features-benefits {
             display: flex;
             flex-direction: row;
             gap: 1rem;
-            margin: 0 10%;
+            margin: 4% 10%;
 
             .benefit-card {
                 flex: 1;
+
+                p {
+                    margin-top: 1.5rem;
+                    line-height: 2rem;
+                }
             }
         }
     }

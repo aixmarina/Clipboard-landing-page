@@ -39,10 +39,15 @@ $grayish-blue2: rgba(245, 246, 248, 255);
     align-items: center;
     text-align: center;
 
-    img {
-        width: 45px;
-        margin: 1.8rem;
+    .benefit-img {
+
+        height: 5rem;
+
+        img {
+            width: 45px;
+        }
     }
+
 
     h3 {
         font-size: x-large;
