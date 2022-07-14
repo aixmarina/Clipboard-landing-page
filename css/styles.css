@@ -92,7 +92,8 @@ header .desc-text p {
   margin-bottom: 2.5rem;
   font-size: 17px;
 }
-header .btn-main {
+
+.btn-main {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
@@ -200,10 +201,10 @@ footer .footer-social {
     background-image: url(/assets/img/bg-header-desktop.png);
     background-repeat: no-repeat;
   }
-  header .btn-main {
+  .btn-main {
     flex-wrap: nowrap;
   }
-  header .btn-main button {
+  .btn-main button {
     padding: 1rem 2.5rem;
   }
   header .desc-text {
@@ -273,6 +274,29 @@ footer .footer-social {
   .features .features-benefits .benefit-card p {
     margin-top: 1.5rem;
     line-height: 2rem;
+  }
+  .companies {
+    margin: 3rem 0.8rem;
+  }
+  .download {
+    margin-top: 7rem;
+  }
+  .download p {
+    max-width: 730px;
+    margin-top: 1.5rem;
+    line-height: 2rem;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  footer .footer-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  footer .footer-social {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 1440px) and (min-width: 1000px) {

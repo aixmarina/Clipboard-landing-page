@@ -52,13 +52,13 @@ header {
             font-size: 17px;
         }
     }
+}
 
-    .btn-main {
-        display: flex;
-        justify-content: center;
-        gap: 1.5rem;
-        flex-wrap: wrap;
-    }
+.btn-main {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 section {
@@ -143,7 +143,6 @@ section {
     h2 {
         font-size: xx-large;
     }
-
 }
 
 footer {
@@ -187,15 +186,15 @@ footer {
         background-repeat: no-repeat;
     }
 
-    header {
+    .btn-main {
+        flex-wrap: nowrap;
 
-        .btn-main {
-            flex-wrap: nowrap;
-
-            button {
-                padding: 1rem 2.5rem;
-            }
+        button {
+            padding: 1rem 2.5rem;
         }
+    }
+
+    header {
 
         .desc-text {
             max-width: 760px;
@@ -284,6 +283,36 @@ footer {
                     line-height: 2rem;
                 }
             }
+        }
+    }
+
+    .companies {
+        margin: 3rem 0.8rem;
+    }
+
+    .download {
+
+        margin-top: 7rem;
+
+        p {
+            max-width: 730px;
+            margin-top: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .footer-nav {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .footer-social {
+            margin-bottom: 0;
         }
     }
 }
