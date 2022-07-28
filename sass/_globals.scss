@@ -114,17 +114,15 @@ section {
     }
 }
 
-.features {
-    .features-main {
-        h3 {
-            margin-top: 6rem;
-            font-size: xx-large;
-        }
+.features .features-main {
 
-        p {
-            margin-bottom: 3rem;
-        }
+    h3 {
+        margin-top: 6rem;
+        font-size: xx-large;
+    }
 
+    p {
+        margin-bottom: 3rem;
     }
 }
 
@@ -168,6 +166,11 @@ footer {
         span {
             color: components.$dark-grayish-blue;
             font-size: large;
+            cursor: pointer;
+
+            &:hover {
+                color: components.$strong-cyan;
+            }
         }
     }
 
@@ -176,6 +179,14 @@ footer {
         flex-direction: row;
         gap: 2.5rem;
         margin-bottom: 1.5rem;
+
+        svg:hover {
+            cursor: pointer;
+
+            path {
+                fill: components.$strong-cyan;
+            }
+        }
     }
 }
 
@@ -194,21 +205,17 @@ footer {
         }
     }
 
-    header {
+    header .desc-text {
+        max-width: 760px;
 
-        .desc-text {
-            max-width: 760px;
-
-            h1 {
-                font-size: 2.7rem;
-            }
-
-            p {
-                font-size: 1.4rem;
-                line-height: 35px;
-            }
+        h1 {
+            font-size: 2.7rem;
         }
 
+        p {
+            font-size: 1.4rem;
+            line-height: 35px;
+        }
     }
 
     .desc {
@@ -291,7 +298,6 @@ footer {
     }
 
     .download {
-
         margin-top: 7rem;
 
         p {
@@ -303,12 +309,15 @@ footer {
 
     footer {
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
+        padding: 2rem;
+
 
         .footer-nav {
             flex-direction: row;
             flex-wrap: wrap;
+            max-width: 407px;
         }
 
         .footer-social {
@@ -319,11 +328,9 @@ footer {
 
 @media (max-width: 1440px) and (min-width: 1000px) {
 
-    .desc-img-1 {
-        img {
-            max-width: 53%;
-            transform: translateX(-7%);
-        }
+    .desc-img-1 img {
+        max-width: 53%;
+        transform: translateX(-7%);
     }
 }
 

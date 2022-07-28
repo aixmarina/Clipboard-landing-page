@@ -8,9 +8,14 @@
   font-family: "Bai Jamjuree", sans-serif;
   border: none;
   padding: 1rem 4.5rem;
+  cursor: pointer;
   background-color: hsl(171deg, 66%, 44%);
   border-bottom: solid 0.25rem hsl(171deg, 61%, 38%);
   box-shadow: 0 15px 25px -15px hsl(171deg, 66%, 44%);
+}
+.btn-main-iOS:hover {
+  background-color: hsla(171deg, 66%, 44%, 0.637);
+  border-color: hsla(171deg, 61%, 38%, 0.3);
 }
 
 .btn-main-Mac {
@@ -22,8 +27,14 @@
   font-family: "Bai Jamjuree", sans-serif;
   border: none;
   padding: 1rem 4.5rem;
+  cursor: pointer;
   background-color: hsl(233deg, 100%, 69%);
   border-bottom: solid 0.25rem rgb(81, 98, 230);
+  box-shadow: 0 15px 25px -15px rgb(116, 123, 122);
+}
+.btn-main-Mac:hover {
+  background-color: hsla(233deg, 100%, 69%, 0.637);
+  border-color: rgba(81, 98, 230, 0.3);
 }
 
 .benefit-card {
@@ -188,12 +199,22 @@ footer .footer-nav {
 footer .footer-nav span {
   color: hsl(210deg, 10%, 33%);
   font-size: large;
+  cursor: pointer;
+}
+footer .footer-nav span:hover {
+  color: hsl(171deg, 66%, 44%);
 }
 footer .footer-social {
   display: flex;
   flex-direction: row;
   gap: 2.5rem;
   margin-bottom: 1.5rem;
+}
+footer .footer-social svg:hover {
+  cursor: pointer;
+}
+footer .footer-social svg:hover path {
+  fill: hsl(171deg, 66%, 44%);
 }
 
 @media (max-width: 1440px) and (min-width: 615px) {
@@ -288,12 +309,14 @@ footer .footer-social {
   }
   footer {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    padding: 2rem;
   }
   footer .footer-nav {
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 407px;
   }
   footer .footer-social {
     margin-bottom: 0;

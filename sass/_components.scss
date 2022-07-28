@@ -8,6 +8,7 @@
     font-family: 'Bai Jamjuree', sans-serif;
     border: none;
     padding: 1rem 4.5rem;
+    cursor: pointer;
 }
 
 //colors
@@ -23,14 +24,24 @@ $grayish-blue2: rgba(245, 246, 248, 255);
     @include btn-base();
     background-color: $strong-cyan;
     border-bottom: solid 0.25rem $strong-cyan2;
-    box-shadow: 0 15px 25px -15px hsl(171deg 66% 44%)
+    box-shadow: 0 15px 25px -15px hsl(171deg 66% 44%);
+
+    &:hover {
+        background-color: hsla(171, 66%, 44%, 0.637);
+        border-color: hsla(171, 61%, 38%, 0.3);
+    }
 }
 
 .btn-main-Mac {
     @include btn-base();
     background-color: $light-blue;
     border-bottom: solid 0.25rem $light-blue2;
+    box-shadow: 0 15px 25px -15px rgb(116, 123, 122);
 
+    &:hover {
+        background-color: hsla(233, 100%, 69%, 0.637);
+        border-color: rgba(81, 98, 230, 0.3);
+    }
 }
 
 .benefit-card {
